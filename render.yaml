@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: albinnewsongbot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: APP_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: OWNER
+        sync: false
+      - key: START_MSG
+        sync: false
+      - key: START_IMG
+        sync: false
+      - key: YOUTUBE_PO_TOKEN
+        sync: false
+      - key: YOUTUBE_COOKIES_FILE
+        sync: false

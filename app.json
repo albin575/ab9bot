@@ -1,0 +1,45 @@
+{
+    "name": "Song-Bot",
+    "description": "A Modular telegram song bot.",
+    "repository": "https://heroku.com/albin575/song-bot",
+    "keywords": [
+       
+        "telegram bot",
+        "pyrogram"
+
+    ],
+    "env": {
+        "APP_ID": {
+            "description": "Get this value from my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "value": ""
+        },
+        "OWNER": {
+            "description": "Your username without @.",
+            "value": "AB_Mediaw"
+        },
+        "START_MSG": {
+            "description": "Start Message of BoT",
+            "value": "<b>Hi {},\nIam A Simple Youtube to Mp3 Downloader Bot,</b>\n\nSend me Any Songs name with /song command"
+        },
+        "START_IMG": {
+            "description": "Start Message's Photo.",
+            "value": "https://telegra.ph/file/5a57db69c5e31750fcc89.jpg"
+        },
+        "BOT_TOKEN": {
+            "description": "ID of the message to edit.",
+            "value": ""
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+        }
+    ]
+}

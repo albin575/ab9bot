@@ -1,0 +1,5 @@
+pyrogram==2.0.106
+tgcrypto==1.2.5
+yt-dlp>=2025.1.15
+requests==2.32.3
+flask==3.0.3
